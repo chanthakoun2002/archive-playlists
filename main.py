@@ -12,5 +12,8 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     scope=os.getenv('SCOPE')
 ))
 
-user = sp.current_user()
-print(f"Logged in as: {user['display_name']}")
+# user = sp.current_user()
+# print(f"Logged in as: {user['display_name']}")
+
+playlist_id = input("enter id").strip()
+
